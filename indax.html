@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./syle.css" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <div>
+    <!-- ----------------drag and drop-------- -->
+     <div class="container">
+      <p class="draggable content1" draggable="true"></p>
+      <p class="draggable content2" draggable="true"></p>
+      <p class="draggable content3" draggable="true"></p>
+    </div> 
+    <!-- ----------------drag and drop-------- -->
+
+    <!-- -----------------img toggle----------- -->
+     <div>
+      <img
+        id="img"
+        class="active"
+        src="http://qnimate.com/wp-content/uploads/2014/03/images2.jpg"
+        alt="img"
+      />
+      <br />
+      <button id="button" onclick="status()">Stop image</button>
+    </div> 
+    <!-- -----------------img toggle----------- -->
+
+    <!-- ---------------colorpiker----------------------- -->
+     <div class="colorpicker">
+      <div
+        class="color1 colorelement"
+        onmouseover="colormouseover('color1')"
+        onmouseout="colormouseout()"
+        onclick="colorsetup('color1')"
+      ></div>
+      <div
+        class="color2 colorelement"
+        onmouseover="colormouseover('color2')"
+        onmouseout="colormouseout()"
+        onclick="colorsetup('color2')"
+      ></div>
+      <div
+        class="color3 colorelement"
+        onmouseover="colormouseover('color3')"
+        onmouseout="colormouseout()"
+        onclick="colorsetup('color3')"
+      ></div>
+      <div
+        class="color4 colorelement"
+        onmouseover="colormouseover('color4')"
+        onmouseout="colormouseout()"
+        onclick="colorsetup('color4')"
+      ></div>
+      <div
+        class="color5 colorelement"
+        onmouseover="colormouseover('color5')"
+        onmouseout="colormouseout()"
+        onclick="colorsetup('color5')"
+      ></div>
+    </div>
+
+    <div class="pikerfield"></div> 
+
+    <!-- ---------------colorpiker----------------------- -->
+
+    <!-- --------------------headin hidder-------------------- -->
+    <div class="paragraph-hidden">
+      <h1
+        class="paragraph-title"
+        onmouseover="partialrevealed()"
+        onmouseout="stoprevealed()"
+        onclick="showparagraph()"
+      >
+        This is Lorem Ipsum
+      </h1>
+      <p class="paragraph disable">
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It
+        has roots in a piece of classical Latin literature from 45 BC, making it
+        over 2000 years old. Richard McClintock, a Latin professor at
+        Hampden-Sydney College in Virginia, looked up one of the more obscure
+        Latin words, consectetur, from a Lorem Ipsum passage, and going through
+        the cites of the word in classical literature, discovered the
+        undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+        of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by
+        Cicero, written in 45 BC. This book is a treatise on the theory of
+        ethics, very popular during the Renaissance. The first line of Lorem
+        Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
+        1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is
+        reproduced below for those interested. Sections 1.10.32 and 1.10.33 from
+        "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their
+        exact original form, accompanied by English versions from the 1914
+        translation by H. Rackham.
+      </p>
+    </div>
+    <!-- --------------------headin hidder-------------------- -->
+    <br><br><br><br><br><br><br><br><br>
+    </div>
+  </body>
+</html>
